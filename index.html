@@ -5,121 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Web Test Helper - Build Status</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      padding: 28px 32px;
-      max-width: 400px;
-      width: 100%;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .app-name {
-      font-size: 18px;
-      font-weight: 600;
-      color: #333;
-    }
-    .version {
-      font-size: 14px;
-      color: #fff;
-      background: #4CAF50;
-      padding: 3px 10px;
-      border-radius: 12px;
-      font-weight: 500;
-    }
-    .builds {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .build-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px;
-      background: #f8faf8;
-      border-radius: 8px;
-      border-left: 3px solid #4CAF50;
-    }
-    .build-item.not-built {
-      background: #fafafa;
-      border-left-color: #ddd;
-    }
-    .platform-icon {
-      font-size: 28px;
-    }
-    .platform-name {
-      font-size: 15px;
-      font-weight: 600;
-      color: #333;
-    }
-    .build-time {
-      font-size: 13px;
-      color: #666;
-      margin-top: 2px;
-    }
-    .build-commit {
-      font-size: 11px;
-      color: #999;
-      margin-top: 2px;
-      font-family: monospace;
-    }
-    .not-built .build-time {
-      color: #aaa;
-    }
-    .footer {
-      margin-top: 16px;
-      padding-top: 12px;
-      border-top: 1px solid #eee;
-      font-size: 11px;
-      color: #bbb;
-      text-align: center;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; color: #333; width: 100%; }
+    h2 { font-size: 16px; margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 100%; }
+    td { padding: 6px 0; font-size: 14px; }
+    td:first-child { color: #666; width: 60px; }
+    td:last-child { text-align: right; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="header">
-      <div class="app-name">Mi Web Test Helper</div>
-      <div class="version">v0.0.14</div>
-    </div>
-    <div class="builds">
-      
-        <div class="build-item">
-          <div class="platform-icon">🍎</div>
-          <div class="build-info">
-            <div class="platform-name">Mac</div>
-            <div class="build-time">2026/04/03 18:30:49</div>
-            <div class="build-commit">commit: 567170a</div>
-          </div>
-        </div>
-      
-        <div class="build-item not-built">
-          <div class="platform-icon">🪟</div>
-          <div class="build-info">
-            <div class="platform-name">Win</div>
-            <div class="build-time">尚未构建</div>
-          </div>
-        </div>
-    </div>
-    <div class="footer">自动更新于每次构建</div>
-  </div>
+  <h2>Mi Web Test Helper v0.0.14</h2>
+  <table>
+    <tr><td>Mac</td><td>2026/04/03 18:34:49</td></tr>
+    <tr><td>Win</td><td>-</td></tr>
+  </table>
 </body>
 </html>
